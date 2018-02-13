@@ -69,6 +69,21 @@ export interface StateChangeOptions {
   selectedItem: any
 }
 
+export interface StateChangeTypes {
+  readonly blurInput: string
+  readonly changeInput: string
+  readonly clickButton: string
+  readonly controlledPropUpdatedSelectedItem: string
+  readonly itemMouseEnter: string
+  readonly keyDownArrowDown: string
+  readonly keyDownArrowUp: string
+  readonly keyDownEnter: string
+  readonly keyDownEscape: string
+  readonly keyDownSpaceButton: string
+  readonly mouseUp: string
+  readonly unknown: string
+}
+
 export interface GetRootPropsOptions {
   refKey: string
 }
