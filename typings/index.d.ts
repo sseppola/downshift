@@ -145,7 +145,11 @@ export interface ControllerStateAndHelpers {
 export type ChildrenFunction = (
   options: ControllerStateAndHelpers,
 ) => React.ReactNode
-export type DownshiftInterface = React.ComponentClass<DownshiftProps>
+
+export interface DownshiftInterface
+  extends React.ComponentClass<DownshiftProps> {
+  readonly stateChangeTypes: StateChangeTypes
+}
 
 declare const Downshift: DownshiftInterface
 export default Downshift
